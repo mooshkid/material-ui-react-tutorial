@@ -39,6 +39,14 @@ const useStyles = makeStyles ({
     color: 'white!important',
     padding: '5px 30px',
     marginBottom: 15,
+  },
+  rootBeer: {
+    background: 'linear-gradient(45deg, turquoise, magenta)',
+    border: 0,
+    borderRadius: 15,
+    color: 'white!important',
+    padding: '5px 30px',
+    marginBottom: 15,
   }
 })
 
@@ -62,11 +70,13 @@ const theme = createTheme({
 
 function ButtonStyled() {
   const classes = useStyles();
-  return <Button className={classes.root}>Test Styled Button</Button>
+  return <Button className={classes.rootBeer}>Test Styled Button</Button>
 }
 
 function CheckboxExample() {
   const [checked, setChecked] = React.useState(true)
+  const label = checked ? 'Testing Checkbox' : 'Delete?'
+
   return (
     <FormControlLabel 
       control={
@@ -80,7 +90,7 @@ function CheckboxExample() {
           }}
         />
       }
-      label="Testing Checkbox?"
+      label={label}
     />
 
   );
