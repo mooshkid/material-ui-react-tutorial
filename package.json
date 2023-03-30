@@ -1,7 +1,7 @@
 {
   "name": "material-ui-react-tutorial",
   "version": "0.1.0",
-  "homepage": "https://lc-masa.github.io/material-ui-react-tutorial",
+  "homepage": "https://mooshkid.github.io/material-ui-react-tutorial",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
